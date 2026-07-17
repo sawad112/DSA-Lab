@@ -1,22 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct node
-{
+typedef struct node{
     int data;
     struct node *l,*r;
 }node;
 
-node* new(int x)
-{
+node* new(int x){
     node *n=malloc(sizeof(node));
     n->data=x;
     n->l=n->r=NULL;
     return n;
 }
 
-node* insert(node *root,int x)
-{
+node* insert(node *root,int x){
     if(root==NULL)
         return new(x);
 
@@ -28,8 +25,7 @@ node* insert(node *root,int x)
     return root;
 }
 
-void inorder(node *root)
-{
+void inorder(node *root){
     if(root)
     {
         inorder(root->l);
@@ -38,8 +34,7 @@ void inorder(node *root)
     }
 }
 
-void preorder(node *root)
-{
+void preorder(node *root){
     if(root)
     {
         printf("%d ",root->data);
@@ -48,8 +43,7 @@ void preorder(node *root)
     }
 }
 
-void postorder(node *root)
-{
+void postorder(node *root){
     if(root)
     {
         postorder(root->l);
@@ -58,8 +52,7 @@ void postorder(node *root)
     }
 }
 
-int search(node *root,int x)
-{
+int search(node *root,int x){
     if(root==NULL)
         return 0;
 
@@ -72,8 +65,7 @@ int search(node *root,int x)
         return search(root->r,x);
 }
 
-int main()
-{
+int main(){
     node *root=NULL;
     int a[]={50,30,70,20,40,60,80};
     int n=7,x;
