@@ -39,7 +39,7 @@ Each solution focuses on understanding:
 | Strings | String processing problems |
 | Linked List | Singly, doubly linked list operations |
 | Stack | Stack implementation and applications |
-| Queue | Queue, circular queue, priority queue concepts |
+| Queue | Queue, Circular queue |
 | Searching | Linear search, binary search |
 | Sorting | Bubble sort, selection sort, insertion sort, merge sort, quick sort |
 | Trees | Binary trees, BST operations |
@@ -47,9 +47,6 @@ Each solution focuses on understanding:
 | Hashing | Hash tables and collision handling |
 | Recursion | Recursive problem solving |
 
-*(Update this list according to your actual folders.)*
-
----
 
 ## 📁 Repository Structure
 
@@ -59,16 +56,29 @@ DSA-Lab
 ├── Arrays
 │   ├── dynamic_memory_allocation.c
 │
-├── Linked_List
-│
+├── Recursion
+│  ├── factorial.c
+|  ├── fibonacci.c
+|  ├── fibonacci_without_printf.c
+|  ├── sum_of_numbers.c
+|
 ├── Stack
-│
+│   ├── stack.c
+|   ├── stack_using_linkedlist.c
+|
 ├── Queue
-│
+│   ├── queue.c
+|   ├── circular_queue.c
+|
 ├── Trees
-│
+│   ├── binary_search_tree.c
+|
 ├── Graphs
 │
+├── Searching
+|   ├── linear_search.c
+|   ├── binary_search.c
+|
 └── README.md
 ```
 
@@ -77,8 +87,7 @@ DSA-Lab
 ## 🛠️ Languages Used
 
 - C / C++
-- Python *(if applicable)*
-- Java *(if applicable)*
+- Python 
 
 ---
 
@@ -109,11 +118,11 @@ g++ filename.cpp -o output
 
 - [x] Basic Data Structures
 - [x] Searching Algorithms
-- [x] Sorting Algorithms
+- [ ] Sorting Algorithms
 - [x] Recursion Practice
 - [x] Linked List Problems
 - [x] Stack & Queue Problems
-- [ ] Advanced Trees
+- [ ] Trees
 - [ ] Graph Algorithms
 - [ ] Dynamic Programming
 
@@ -132,9 +141,9 @@ For each problem:
 
 ---
 
-## 🤝 Contributions
+## 🤝 Corrections
 
-Contributions are welcome!
+Corrections are welcome!
 
 If you find:
 - Bugs
@@ -146,16 +155,9 @@ Feel free to open an issue or submit a pull request.
 
 ---
 
-## ⭐ Support
-
-If this repository helped you in your DSA journey, consider giving it a ⭐.
-
-Happy Coding! 🚀
-
----
-
 ## 👨‍💻 Author
 
 **Sawad**
 GitHub: [@sawad112](https://github.com/sawad112)
+
 Sylhet Engineering College
