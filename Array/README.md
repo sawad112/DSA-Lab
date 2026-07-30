@@ -193,7 +193,6 @@ free(ptr);    // Undefined behavior
 ```
 
 ---
-
 ## Time Complexity
 
 | Function | Complexity |
@@ -204,15 +203,6 @@ free(ptr);    // Undefined behavior
 | free() | O(1) Average |
 
 ---
-
-## Header File
-
-```c
-#include <stdlib.h>
-```
-
----
-
 ## Conclusion
 
 Dynamic memory allocation enables efficient runtime memory management in C. Proper use of `malloc()`, `calloc()`, `realloc()`, and `free()` helps create flexible, memory-efficient programs while preventing leaks and undefined behavior.
