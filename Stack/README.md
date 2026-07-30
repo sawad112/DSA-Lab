@@ -1,4 +1,4 @@
-# Stack in C
+# Stack
 
 ## Overview
 
