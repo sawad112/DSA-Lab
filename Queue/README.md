@@ -78,7 +78,6 @@ front == -1
 - Network Packet Buffer
 - Streaming Systems
 
----
 
 ## Comparison
 
@@ -89,7 +88,6 @@ front == -1
 | FIFO | Yes | Yes |
 | Wrap Around | No | Yes |
 
----
 
 ## Conclusion
 
