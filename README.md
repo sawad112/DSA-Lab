@@ -51,57 +51,57 @@ Each solution focuses on understanding:
 ## 📁 Repository Structure
 
 ```
-DSA-Lab
+📁DSA-Lab
 |
-├── Arrays
+├──📁Arrays
 │   ├── dynamic_memory_allocation.c
 |   ├── README.md
 │   
-├── Graph
+├──📁Graph
 |   ├── adjacency_matrix.c
 |   ├── graph.
 |   ├── README.md
 |
-├── Recursion
+├──📁Recursion
 │  ├── factorial.c
 |  ├── fibonacci.c
 |  ├── fibonacci_without_printf.c
 |  ├── sum_of_numbers.c
 |
-├── Stack
+├──📁Stack
 │   ├── stack.c
 |   ├── stack_using_linkedlist.c
 |
-├── Queue
+├──📁Queue
 │   ├── queue.c
 |   ├── circular_queue.c
 |
-├── Trees
+├──📁Trees
 │   ├── binary_search_tree.c
 |   ├── tree.c
 |   ├── AVL_tree.c
 |   ├── README.md
 |
-├── Graphs
+├──📁Graphs
 │   ├── adjacency_matrix.c
 |   ├── graph.c
 |   ├── README.md
 |
-├── Heap
+├──📁Heap
 |    ├── heap_sort.c
 |    ├── max_heap.c
 |    ├── min_heap.c
 |    ├── README.md
 |
-├── Linked List
+├──📁Linked List
 |    ├── linked_list.c
 |    ├── README.md
 |
-├── Searching
+├──📁Searching
 |   ├── linear_search.c
 |   ├── binary_search.c
 |
-├── Sorting
+├──📁Sorting
 |   ├── bubble_sort.c
 |   ├── bucket_sort.c
 |   ├── counting_sort.c
@@ -112,11 +112,11 @@ DSA-Lab
 |   ├── selection_sort.c
 |   ├── README.md
 |
-├── Algorithm
+├──📁Algorithm
 |     ├── BFS.c
 |     ├── DFS.c
 │     ├── README.md
-├── HW
+├──📁HW
 |   ├── expression.c
 └── README.md
 ```
