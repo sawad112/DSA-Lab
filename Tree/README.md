@@ -1,140 +1,317 @@
-# Tree 
+# Tree, Binary Search Tree & AVL Tree in C
 
 ## Overview
 
-A **Tree** is a non-linear hierarchical data structure consisting of **nodes** connected by **edges**. The topmost node is called the **root**, and each node may have zero or more child nodes.
+A **Tree** is a non-linear hierarchical data structure consisting of nodes connected by edges.
 
----
+A tree contains:
+- **Root** → The first node of the tree
+- **Parent** → A node having child nodes
+- **Child** → Node connected below a parent
+- **Leaf** → Node with no children
+- **Edge** → Connection between two nodes
 
-# Basic Terminology
+Example:
 
-- **Root** – The first node of the tree.
-- **Parent** – A node that has one or more children.
-- **Child** – A node connected below a parent.
-- **Leaf Node** – A node with no children.
-- **Sibling** – Nodes sharing the same parent.
-- **Edge** – Connection between two nodes.
-- **Level** – Distance from the root.
-- **Height** – Longest path from the root to a leaf.
-
----
-
-# Tree Structure
-
-```text
+```
         A
        / \
       B   C
-     / \   \
-    D   E   F
-```
-
-- Root: A
-- Parent: A, B, C
-- Leaf Nodes: D, E, F
-- Height: 2
-
----
-
-# Types of Trees
-
-- General Tree
-- Binary Tree
-- Binary Search Tree (BST)
-- AVL Tree
-- Heap
-- B-Tree
-
----
-
-# Binary Tree
-
-A **Binary Tree** is a tree in which each node has at most **two children**, called the **left child** and **right child**.
-
----
-
-# Tree Traversals
-
-## 1. Preorder (Root → Left → Right)
-
-```text
-A B D E C F
-```
-
-## 2. Inorder (Left → Root → Right)
-
-```text
-D B E A C F
-```
-
-## 3. Postorder (Left → Right → Root)
-
-```text
-D E B F C A
-```
-
-## 4. Level Order
-
-```text
-A B C D E F
+     / \
+    D   E
 ```
 
 ---
 
-# Time Complexity
+# 1. General Tree
+
+A **General Tree** is a tree where a node can have any number of children.
+
+Example:
+
+```
+          1
+       /  |  \
+      2   3   4
+     / \
+    5   6
+```
+
+Features:
+- No fixed number of children.
+- Used to represent hierarchical data.
+
+Applications:
+- File systems
+- Organization structures
+- XML/HTML documents
+
+---
+
+# Tree Traversal
+
+Tree traversal means visiting every node of a tree.
+
+## 1. Depth First Search (DFS)
+
+### Preorder
+
+```
+Root → Left → Right
+```
+
+### Inorder
+
+```
+Left → Root → Right
+```
+
+### Postorder
+
+```
+Left → Right → Root
+```
+
+---
+
+## 2. Breadth First Search (BFS)
+
+Visits nodes level by level.
+
+Example:
+
+```
+1 2 3 4 5
+```
+
+---
+
+# 2. Binary Search Tree (BST)
+
+A **Binary Search Tree** is a binary tree where:
+
+```
+Left Child < Root < Right Child
+```
+
+Example:
+
+```
+          50
+        /    \
+      30      70
+     /  \    /  \
+   20   40 60   80
+```
+
+---
+
+## BST Operations
+
+### Insert
+
+Adds a new node while maintaining BST property.
+
+### Search
+
+Finds an element by comparing values.
+
+### Delete
+
+Removes a node from the tree.
+
+Deletion cases:
+
+1. Node has no child
+2. Node has one child
+3. Node has two children
+
+---
+
+## BST Complexity
+
+| Operation | Average | Worst |
+|-----------|---------|-------|
+| Search | O(log n) | O(n) |
+| Insert | O(log n) | O(n) |
+| Delete | O(log n) | O(n) |
+
+Worst case occurs when the tree becomes skewed.
+
+Example:
+
+```
+10
+ \
+ 20
+  \
+  30
+```
+
+---
+
+# 3. AVL Tree
+
+An **AVL Tree** is a self-balancing Binary Search Tree.
+
+It maintains balance after insertion and deletion.
+
+Balance Factor:
+
+```
+Balance Factor = Height(Left) - Height(Right)
+```
+
+Allowed values:
+
+```
+-1, 0, 1
+```
+
+---
+
+# AVL Tree Rotations
+
+Rotations are used to balance the tree.
+
+There are four types:
+
+---
+
+## 1. LL Rotation (Right Rotation)
+
+Before:
+
+```
+        30
+       /
+      20
+     /
+    10
+```
+
+After:
+
+```
+        20
+       /  \
+      10   30
+```
+
+---
+
+## 2. RR Rotation (Left Rotation)
+
+Before:
+
+```
+    10
+      \
+       20
+         \
+          30
+```
+
+After:
+
+```
+        20
+       /  \
+      10   30
+```
+
+---
+
+## 3. LR Rotation
+
+Combination of:
+
+```
+Left Rotation + Right Rotation
+```
+
+Used when insertion happens in the left subtree of the right child.
+
+---
+
+## 4. RL Rotation
+
+Combination of:
+
+```
+Right Rotation + Left Rotation
+```
+
+Used when insertion happens in the right subtree of the left child.
+
+---
+
+# AVL Tree Complexity
 
 | Operation | Complexity |
 |-----------|------------|
-| Search | O(n) |
-| Insert | O(n) |
-| Delete | O(n) |
-| Traversal | O(n) |
+| Search | O(log n) |
+| Insert | O(log n) |
+| Delete | O(log n) |
+| Rotation | O(1) |
 
-> **Note:** In a **Binary Search Tree (BST)**, Search, Insert, and Delete take **O(log n)** on average but **O(n)** in the worst case.
+---
+
+# Tree vs BST vs AVL
+
+| Feature | Tree | BST | AVL Tree |
+|---------|------|-----|----------|
+| Type | General Structure | Ordered Binary Tree | Self-Balancing BST |
+| Children | Any Number | Maximum 2 | Maximum 2 |
+| Ordering | No Rule | Left < Root < Right | Left < Root < Right |
+| Balance | Not Required | Not Guaranteed | Always Balanced |
+| Search | O(n) | O(log n) Average | O(log n) |
 
 ---
 
 # Advantages
 
-- Represents hierarchical data efficiently.
-- Fast searching and insertion in balanced trees.
-- Dynamic memory allocation.
-- Supports recursive algorithms.
+## Tree
+- Represents hierarchical relationships.
+- Flexible structure.
 
+## BST
+- Faster searching than normal trees.
+- Easy insertion and deletion.
 
-# Disadvantages
-
-- More memory required due to pointers.
-- Unbalanced trees reduce performance.
-- Traversal is more complex than linear structures.
-
-
-
-# Applications
-
-- File systems
-- Database indexing (B-Tree, B+ Tree)
-- Expression trees
-- Decision trees
-- XML/HTML document structure
-- Compiler syntax trees
-- Artificial Intelligence
-
-
-# Comparison
-
-| Feature | Tree |
-|---------|------|
-| Data Structure | Non-linear |
-| Root Node | One |
-| Children | Zero or More |
-| Traversal | DFS, BFS |
-| Memory | Dynamic |
-| Common Implementation | Linked Nodes |
+## AVL Tree
+- Guaranteed fast searching.
+- Prevents skewed trees.
+- Maintains O(log n) operations.
 
 ---
 
+# Applications
 
-# Conclusion
+## Tree
+- File systems
+- Database structure
+- HTML/XML parsing
 
-A **Tree** is a hierarchical, non-linear data structure used to represent relationships between data. It supports efficient storage, searching, and traversal, making it essential in databases, file systems, compilers, and many other computer science applications.
+## BST
+- Searching systems
+- Dictionaries
+- Symbol tables
+
+## AVL Tree
+- Database indexing
+- Memory management
+- Searching applications requiring guaranteed performance
+
+---
+
+# Implementation Files
+
+```
+Tree
+│
+├── tree.c
+├── bst.c
+├── avl_tree.c
+└── README.md
+```
