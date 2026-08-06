@@ -1,5 +1,4 @@
-# DSA-Lab
-Data Structures and Algorithms - Lab & Practice Problems
+# Data Structures and Algorithms - Lab & Practice Problems
 
 # 🚀 DSA Lab Practice Problems
 
