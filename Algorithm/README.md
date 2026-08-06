@@ -162,10 +162,9 @@ Example:
 - Maze solving
 - Path finding
 - Connected components
-
 ---
 
-# Implementation Files
+# Folder Structure
 
 ```
 Algorithm
