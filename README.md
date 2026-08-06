@@ -3,10 +3,6 @@ Data Structures and Algorithms - Lab & Practice Problems
 
 # 🚀 DSA Lab Practice Problems
 
-![GitHub repo size](https://img.shields.io/github/repo-size/sawad112/DSA-Lab)
-![GitHub stars](https://img.shields.io/github/stars/sawad112/DSA-Lab?style=social)
-![GitHub last commit](https://img.shields.io/github/last-commit/sawad112/DSA-Lab)
-
 A collection of **Data Structures and Algorithms (DSA) Lab practice problems** implemented while learning and practicing fundamental concepts of programming, problem-solving, and algorithm design.
 
 This repository contains solutions for various DSA topics including arrays, linked lists, stacks, queues, trees, graphs, sorting, searching, and other important concepts commonly covered in DSA courses and lab sessions.
