@@ -1,11 +1,6 @@
-# DSA-Lab
-Data Structures and Algorithms - Lab & Practice Problems
+# Data Structures and Algorithms - Lab & Practice Problems
 
 # 🚀 DSA Lab Practice Problems
-
-![GitHub repo size](https://img.shields.io/github/repo-size/sawad112/DSA-Lab)
-![GitHub stars](https://img.shields.io/github/stars/sawad112/DSA-Lab?style=social)
-![GitHub last commit](https://img.shields.io/github/last-commit/sawad112/DSA-Lab)
 
 A collection of **Data Structures and Algorithms (DSA) Lab practice problems** implemented while learning and practicing fundamental concepts of programming, problem-solving, and algorithm design.
 
@@ -51,34 +46,73 @@ Each solution focuses on understanding:
 ## 📁 Repository Structure
 
 ```
-DSA-Lab
-│
-├── Arrays
+📁DSA-Lab
+|
+├──📁Arrays
 │   ├── dynamic_memory_allocation.c
-│
-├── Recursion
+|   ├── README.md
+│   
+├──📁Graph
+|   ├── adjacency_matrix.c
+|   ├── graph.
+|   ├── README.md
+|
+├──📁Recursion
 │  ├── factorial.c
 |  ├── fibonacci.c
 |  ├── fibonacci_without_printf.c
 |  ├── sum_of_numbers.c
 |
-├── Stack
+├──📁Stack
 │   ├── stack.c
 |   ├── stack_using_linkedlist.c
 |
-├── Queue
+├──📁Queue
 │   ├── queue.c
 |   ├── circular_queue.c
 |
-├── Trees
+├──📁Trees
 │   ├── binary_search_tree.c
+|   ├── tree.c
+|   ├── AVL_tree.c
+|   ├── README.md
 |
-├── Graphs
-│
-├── Searching
+├──📁Graphs
+│   ├── adjacency_matrix.c
+|   ├── graph.c
+|   ├── README.md
+|
+├──📁Heap
+|    ├── heap_sort.c
+|    ├── max_heap.c
+|    ├── min_heap.c
+|    ├── README.md
+|
+├──📁Linked List
+|    ├── linked_list.c
+|    ├── README.md
+|
+├──📁Searching
 |   ├── linear_search.c
 |   ├── binary_search.c
 |
+├──📁Sorting
+|   ├── bubble_sort.c
+|   ├── bucket_sort.c
+|   ├── counting_sort.c
+|   ├── insertion_sort.c
+|   ├── merge_sort.c
+|   ├── quick_sort.c
+|   ├── radix_sort.c
+|   ├── selection_sort.c
+|   ├── README.md
+|
+├──📁Algorithm
+|     ├── BFS.c
+|     ├── DFS.c
+│     ├── README.md
+├──📁HW
+|   ├── expression.c
 └── README.md
 ```
 
@@ -87,8 +121,6 @@ DSA-Lab
 ## 🛠️ Languages Used
 
 - C / C++
-- Python 
-
 ---
 
 ## ⚡ How to Run
@@ -117,13 +149,13 @@ g++ filename.cpp -o output
 ## 📈 Learning Progress
 
 - [x] Basic Data Structures
-- [x] Searching Algorithms
-- [ ] Sorting Algorithms
-- [x] Recursion Practice
-- [x] Linked List Problems
-- [x] Stack & Queue Problems
-- [ ] Trees
-- [ ] Graph Algorithms
+- [x] Searching 
+- [x] Sorting 
+- [x] Recursion 
+- [x] Linked List 
+- [x] Stack & Queue
+- [x] Trees
+- [x] Graph
 - [ ] Dynamic Programming
 
 ---
@@ -138,21 +170,6 @@ For each problem:
 4. Implement the solution
 5. Analyze time and space complexity
 6. Test with multiple cases
-
----
-
-## 🤝 Corrections
-
-Corrections are welcome!
-
-If you find:
-- Bugs
-- Better solutions
-- Optimization opportunities
-- Additional practice problems
-
-Feel free to open an issue or submit a pull request.
-
 ---
 
 ## 👨‍💻 Author
@@ -160,4 +177,5 @@ Feel free to open an issue or submit a pull request.
 **Sawad**
 GitHub: [@sawad112](https://github.com/sawad112)
 
-Sylhet Engineering College
+
+CSE,Sylhet Engineering College
